@@ -1,1 +1,0 @@
-# rit-course-scheduling-computing-
