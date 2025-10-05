@@ -1,62 +1,62 @@
-# 🎓 RIT Course Scheduling Computing Department
+# RIT Course Scheduling Computing Department
 
 An intelligent course scheduling system designed for the Rochester Institute of Technology (RIT) Computing Department. This system uses genetic algorithms to automatically generate optimal course schedules while considering classroom capacity, instructor availability, course prerequisites, and time conflicts.
 
-## 👥 Team Members
+## Team Members
 - **Mohammed Abu Mustafa**
 - **Noora AlNuaimi** 
 - **Johnson Maliakal**
 
-## 🚀 Features
+## Features
 
-### 🧹 **Data Cleaning & Processing**
+### Data Cleaning & Processing
 - Clean and process Excel files containing course data
 - Filter courses by department (Computing, ISTE, NSSA, CSEC, etc.)
 - Handle duplicate columns and malformed data
 - Generate clean CSV files for scheduling algorithms
 
-### 🧬 **Genetic Algorithm Scheduler**
+### Genetic Algorithm Scheduler
 - Advanced genetic algorithm implementation using PyGAD
 - Optimizes course schedules based on multiple constraints
 - Handles classroom capacity, time conflicts, and instructor preferences
 - Configurable generation parameters for fine-tuning
 
-### 📊 **Interactive Visualizations**
+### Interactive Visualizations
 - **Classroom Schedule Visualization**: Gantt chart showing all courses across time slots and rooms
 - **Instructor Schedule Visualization**: Individual instructor workload and schedule analysis
 - **Conflict Detection**: Automatic identification of scheduling conflicts
 - **Weekly Schedule View**: Clear day-by-day breakdown of courses
 
-### 🖥️ **User-Friendly GUI**
+### User-Friendly GUI
 - Intuitive Tkinter-based graphical interface
 - File selection dialogs for Excel and CSV files
 - Progress tracking with visual progress bars
 - Real-time generation status updates
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 course-scheduling-main/
-├── 📊 Excel/
+├── Excel/
 │   ├── 2023-2024 Plan for Dept Heads.xlsx  # Original course data
 │   ├── classrooms.csv                      # Classroom capacity and types
 │   └── prerequisites.csv                   # Course prerequisite relationships
-├── 🐍 Python Files/
+├── Python Files/
 │   ├── main.py                            # Main GUI application
 │   ├── algo_final.py                      # Genetic algorithm implementation
 │   ├── cleaning_moh_final.py              # Data cleaning and processing
 │   ├── visualizer.py                      # Classroom schedule visualization
 │   └── instructor_visualizer.py           # Instructor schedule visualization
-├── 📓 Documentation/
+├── Documentation/
 │   ├── README.md                          # This file
 │   ├── install_instructions.txt           # Installation guide
 │   └── rough_notes.ipynb                  # Development notes and experiments
-└── 🖼️ Visualizations/
+└── Visualizations/
     ├── idea1.png                          # Course schedule visualization example
     └── idea2.png                          # Instructor schedule example
 ```
 
-## 🖼️ Visualizations
+## Visualizations
 
 ### Course Schedule Overview
 ![Course Schedule Visualization](idea1.png)
@@ -66,7 +66,7 @@ course-scheduling-main/
 ![Instructor Schedule](idea2.png)
 *Individual instructor schedule showing Omar Abdul Latif's weekly course load with specific room assignments and time slots.*
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -101,26 +101,26 @@ pip install xlrd
    python main.py
    ```
 
-## 📖 How to Use
+## How to Use
 
-### 1. **Clean Excel File**
+### 1. Clean Excel File
 - Select "Clean Excel File" from the main menu
 - Choose your Excel file containing course data
 - Select the appropriate sheet (e.g., "Spring 2024", "Fall 2024")
 - The system will clean and process the data automatically
 
-### 2. **Generate Course Schedule**
+### 2. Generate Course Schedule
 - Select "Generate Course Schedule"
 - Enter the number of generations for the genetic algorithm
 - Select Spring and Fall CSV files (cleaned data)
 - Click "OK" to start the optimization process
 - Monitor progress with the visual progress bar
 
-### 3. **Visualize Schedules**
+### 3. Visualize Schedules
 - **Classroom Visualizer**: View overall course distribution across rooms and time slots
 - **Instructor Visualizer**: Analyze individual instructor schedules and workloads
 
-## 🧬 Algorithm Details
+## Algorithm Details
 
 ### Genetic Algorithm Parameters
 - **Population Size**: Configurable based on problem complexity
@@ -136,7 +136,7 @@ pip install xlrd
 - **Soft Constraints**: Optimized for (instructor preferences, room types)
 - **Penalty System**: Automatic conflict detection and resolution
 
-## 📊 Data Format
+## Data Format
 
 ### Input Data Structure
 The system expects Excel files with the following columns:
@@ -166,29 +166,29 @@ NSSA 245,NSSA 241
 ISTE 230,ISTE 140
 ```
 
-## 🎯 Key Features
+## Key Features
 
-### ✅ **Automated Conflict Resolution**
+### Automated Conflict Resolution
 - Detects and resolves scheduling conflicts
 - Ensures no double-booking of classrooms
 - Validates instructor availability
 
-### ✅ **Capacity Optimization**
+### Capacity Optimization
 - Matches classroom capacity with enrollment
 - Considers room types (Lecture, Lab, Auditorium)
 - Optimizes space utilization
 
-### ✅ **Flexible Time Slots**
+### Flexible Time Slots
 - Supports different time slot patterns
 - Handles varying course durations
 - Accommodates special scheduling needs
 
-### ✅ **Comprehensive Reporting**
+### Comprehensive Reporting
 - Detailed conflict reports
 - Instructor workload analysis
 - Resource utilization statistics
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Core Technologies
 - **Python 3.7+**: Main programming language
@@ -202,28 +202,28 @@ ISTE 230,ISTE 140
 - **Memory Management**: Efficient data structures for large datasets
 - **Caching**: Optimized data access patterns
 
-## 📈 Future Enhancements
+## Future Enhancements
 
-- [ ] **Web-based Interface**: Modern web application for better accessibility
-- [ ] **Machine Learning Integration**: Predictive scheduling based on historical data
-- [ ] **Real-time Updates**: Live schedule modifications and conflict resolution
-- [ ] **Multi-semester Planning**: Long-term scheduling across multiple semesters
-- [ ] **Instructor Preferences**: Advanced preference modeling and optimization
+- **Web-based Interface**: Modern web application for better accessibility
+- **Machine Learning Integration**: Predictive scheduling based on historical data
+- **Real-time Updates**: Live schedule modifications and conflict resolution
+- **Multi-semester Planning**: Long-term scheduling across multiple semesters
+- **Instructor Preferences**: Advanced preference modeling and optimization
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions to improve the course scheduling system! Please feel free to:
+We welcome contributions to improve the course scheduling system. Please feel free to:
 
 1. **Fork the repository**
 2. **Create a feature branch**
 3. **Make your improvements**
 4. **Submit a pull request**
 
-## 📄 License
+## License
 
 This project is developed for academic purposes at the Rochester Institute of Technology. Please respect the academic integrity guidelines when using this system.
 
-## 📞 Support
+## Support
 
 For questions, issues, or contributions, please contact:
 - **Mohammed Abu Mustafa**: [GitHub Profile](https://github.com/MohammedAbuMutafa)
@@ -231,4 +231,4 @@ For questions, issues, or contributions, please contact:
 
 ---
 
-*Built with ❤️ for the RIT Computing Department*
+Developed for the RIT Computing Department
